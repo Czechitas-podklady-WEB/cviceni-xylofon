@@ -13,9 +13,9 @@ const naStisknuti = (udalost) => {
 	prehrajTonNaKameni(udalost.target)
 }
 
-for (let i = 0; i < kameny.length; i++) {
-	kameny[i].addEventListener('click', naStisknuti)
-}
+kameny.forEach((kamen) => {
+	kamen.addEventListener('click', naStisknuti)
+})
 
 // Bonus
 const naKlavesu = (udalost) => {
